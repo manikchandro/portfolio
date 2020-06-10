@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+a {
+    text-decoration: none
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+body {
+    font-family: 'Exo', sans-serif;
+}
+
+.full-nav {
+    position: absolute;
+    background-color: transparent;
+    top: 20px;
+    left: 0;
+    z-index: 99;
+    width: 100%
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .active>.nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 17px;
+    border: 2px solid transparent;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .active>.nav-link {
+    border-color: #028794;
+    color: #fff
+}
+
+
+/* slider css*/
+
+.slider {
+    background: url(../images/banner1.jpg) left top no-repeat;
+    background-size: cover;
+    height: 800px;
+    position: relative;
+    z-index: 1
+}
+
+.slider:before,
+#full-service:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+    z-index: -1
+}
+
+.banner-txt {
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    bottom: 20px
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.slick-dots li {
+    display: inline-block
+}
+
+.slick-dots li button {
+    font-size: 0;
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #028794;
+}
+
+
+/* about us */
+
+#full-about {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+#full-service {
+    background: url(../images/service-bg.jpg) left top no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+    position: relative;
+    z-index: 1
+}
+
+.sec-title h3 {
+    font-size: 24px;
+    color: #028794;
+    font-family: "Myriad Pro";
+    text-transform: uppercase
+}
+
+.sec-title p {
+    color: #fff;
+    font-size: 14px;
+}
+
+.serv-txt {
+    font-family: Myriad Pro;
+    text-align: center
+}
+
+.serv-txt i {
+    height: 55px;
+    width: 55px;
+    background-color: #028794;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 55px;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.serv-txt h4 {
+    display: inline-block;
+    font-size: 17px;
+}
+
+.serv-txt p {
+    text-align: justify;
+    padding: 25px 0
+}
+
+#full-work {
+    padding: 60px 0;
+}
+
+#full-work .sec-title p,
+#full-blog .sec-title p {
+    color: #444
+}
+
+.work-item {
+    position: relative;
+    overflow: hidden
+}
+
+.img-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(2, 135, 148, 0.51);
+    left: 0;
+    top: 0;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    text-align: center;
+    color: #fff
+}
+
+.work-item:hover .img-overlay {
+    transform: translateX(0)
+}
+
+#full-blog {
+    padding-bottom: 75px
+}
+
+.button{
+    padding-bottom: 15px
+}
+.button a{
+    padding: 8px 12px;
+    background-color: #028794;
+    border: 5px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 10px
+}
+.blog-details {}
+
+.blog-details h3 {
+    color: #2a2b2c;
+    font-size: 13px;
+    margin: 10px 0;
+    
+}
+
+.blog-details h5 {
+    color: #028794;
+    font-size: 11px;
+}
+
+.blog-details p {
+    color: #313233;
+    font-size: 15px;
+    text-align: justify
+}
+
+#full-footer {
+    padding: 40px 0;
+    background-color: #070707
+}
+
+.footer-col h4 {
+    font-size: 19px;
+    color: #028794;
+    text-transform: uppercase
+}
+
+.footer-col ul li a {
+    color: #fff;
+    font-size: 13px;
+    text-transform: capitalize
+}
+
+.ftr-txt p {
+    font-size: 13px;
+    color: #fff
+}
+
+.footer-media ul li a i {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: green;
+    display: block;
+    line-height: 30px;
+}
+.fas.fa-map-marker-alt {
+    padding-right: 5px;
+}
+
+.fas.fa-mobile-alt{
+    padding-right: 5px
+}
+
+.fa-envelope-open-text{
+    padding-right: 5px
+}
+
+.footer-media ul li a .fa-facebook-f {
+    background-color: #0073bf
+}
+
+.footer-media ul li a .fa-twitter {
+    background-color: #00c3d8
+}
+
+.footer-media ul li a .fa-youtube {
+    background-color: #ff5e5e
+}
+
+.footer-media ul li a .fa-linkedin {
+    background-color: #2e9bd6
+}
+.mixitup-control-active{
+    background-color: darkcyan;
+    color: #fff
+}
+
+.btn-light:hover{
+    background-color: darkcyan;
+    color: #fff
+}
+
+.btn{
+    padding: 8px 30px
+}
+/*
+.btn-light{
+    border-color: #fff;
+    background-color: #fff
+}
+*/
+
+
+
+
+
+
+
+
